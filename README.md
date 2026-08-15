@@ -1,9 +1,9 @@
-# EchoMix for Linux — test repository
+# EchoMix for Linux (test repository)
 
 This is the Dalamud plugin repository for the **Linux build** of [EchoMix](https://echoxiv.com).
 
 It talks to the same relay as the normal Windows build, so your DJ profile, your followers and every
-live show are exactly the same — you'll see the same people and they'll see you. The difference is
+live show are exactly the same. You'll see the same people and they'll see you. The difference is
 under the hood: the audio engine is a native Linux program using PipeWire/PulseAudio, instead of the
 Windows one running through Wine's emulated audio.
 
@@ -18,24 +18,24 @@ https://raw.githubusercontent.com/jfraygit/Echo-Linux/main/pluginmaster.json
 Then install **EchoMix (Linux)** from the plugin installer.
 
 It installs as a **separate plugin** from the normal EchoMix, so it won't disturb or replace an
-existing install — you can have both and remove this one at any time. The trade-off is that it
+existing install. You can have both, and remove this one at any time. The trade-off is that it
 starts with its own empty playlists and sound pads. Your DJ profile, followers and shows are stored
 on the relay, so those carry across untouched.
 
 ## Requirements
 
-Almost nothing — the plugin brings its own runtime, and mp3, flac, wav and ogg all play with no
+Almost nothing. The plugin brings its own runtime, and mp3, flac, wav and ogg all play with no
 extra software.
 
 | | Needed? | If missing |
 |---|---|---|
 | **libpulse** | Yes | No audio at all. Already present on any Linux desktop with working sound. |
-| **PipeWire tools** | Optional | Spotify Mode captures your whole audio output instead of just Spotify — so anything else making noise goes out to your listeners. |
+| **PipeWire tools** | Optional | Spotify Mode captures your whole audio output instead of just Spotify, so anything else making noise goes out to your listeners. |
 | **ffmpeg** | Optional | aac, m4a and wma files won't play. Everything else is unaffected. |
 
 ## If something isn't working
 
-The plugin ships with a self-check. Run it from a terminal — it reports exactly what your machine
+The plugin ships with a self-check. Run it from a terminal. It reports exactly what your machine
 can and can't do, and which relay the build is pointed at:
 
 ```sh
@@ -52,9 +52,10 @@ anything missing:
 
 ## This is a test build
 
-It's had a lot of verification off the game — audio playback, decoding, the relay connection,
-hosting and joining shows — but the part that hands off between Wine and the native binary can only
-really be exercised in a live game, which is what this repository is for.
+It's had a lot of verification off the game, covering audio playback, decoding, the relay
+connection, and hosting and joining shows. What it hasn't had is a real game running it: the part
+that hands off between Wine and the native binary can only be exercised in a live client, which is
+what this repository is for.
 
 Worth reporting if you hit it:
 
