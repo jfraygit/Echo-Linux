@@ -6,7 +6,7 @@
     "AssemblyVersion": "1.3.0.5",
     "Description": "The Linux build of EchoMix. Same relay, same DJ profiles, same live shows as the Windows version - but the audio engine is a native Linux binary talking straight to PipeWire/PulseAudio instead of running through Wine's emulated audio. An interactive DJ deck with live mixing tools, custom playlists, and a synced listener mode with an audio visualizer.",
     "Punchline": "Spin tracks and let the party sync in - natively, on Linux.",
-    "LastUpdate": 1786866251,
+    "LastUpdate": 1786866627,
     "Changelog": "First Linux build. The audio engine is now a native Linux program using PipeWire/PulseAudio instead of running through Wine's emulated audio.\nSpotify Mode captures Spotify on its own through PipeWire, and track info comes from your desktop's own media controls.\nEvery output device's monitor is offered as an input, so External Input Mode no longer needs a virtual audio cable.\nmp3, flac, wav and ogg play with nothing extra installed; aac, m4a and wma need ffmpeg.\nInstalls alongside the Windows build as a separate plugin, so it won't disturb an existing EchoMix.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://echoxiv.com",
